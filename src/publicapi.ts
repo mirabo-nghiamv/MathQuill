@@ -255,8 +255,8 @@ function getInterface(v: number) {
       this.__controller.editablesTextareaEvents();
       return this;
     }
-    focus() {
-      this.__controller.getTextareaOrThrow()[0].focus();
+    focus(index: number = 0) {
+      this.__controller.getTextareaOrThrow()[index].focus();
       this.__controller.scrollHoriz();
       return this;
     }
